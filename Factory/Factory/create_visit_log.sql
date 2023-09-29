@@ -1,19 +1,10 @@
+if(object_id(N'fct.visit_log') is null)
 create table fct.visit_log
 (
   employee_id int not null,
   visit_date date not null,
   constraint uq_vt_lg primary key(employee_id, visit_date)
 )
-
-create table fct.visit_log_isc
-(
-  employee_id int not null,
-  visit_date date not null,
-  constraint uq_vt_lg_isc primary key(visit_date, employee_id)
-)
-
-drop index  uq_vt_lg_isc on fct.visit_log_isc
-alter table fct.visit_log_isc drop constraint uq_vt_lg_isc
 
 declare
   @count int = 1000 * 100,
@@ -25,6 +16,8 @@ declare
   @log_month int,
   @log_date date;
 
+--Данный метод работает не корректно при ограничении первичного ключа
+--по натуральным полям.
 while (@count > 0)
 begin
   set @log_month = floor(rand() * 12 + @offset);
@@ -38,25 +31,3 @@ begin
 
   set @count = @count - @offset;
 end;
-
-insert into fct.visit_log
-select * from fct.visit_log_isc
-
-select * from fct.visit_log vl where vl.visit_date = '2023-02-03'
-select * from fct.visit_log_isc vl where vl.visit_date = '2023-02-03'
-
-select * from 
-fct.visit_log vl
-join fct.employee e on e.employee_id = vl.employee_id
-
-select * from 
-fct.visit_log vl
-join fct.employee_no_ix e on e.employee_id = vl.employee_id
-
-select * from 
-fct.visit_log_isc vl
-join fct.employee e on e.employee_id = vl.employee_id
-
-select * from 
-fct.visit_log_isc vl
-join fct.employee_no_ix e on e.employee_id = vl.employee_id

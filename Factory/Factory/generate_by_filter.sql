@@ -1,4 +1,7 @@
-
+--Как по мне программирование на SQL не очень то хорошая затея
+--Такие операции как генерирование данных лучше выполнить
+--на других языках.
+--Смысл данного генератора прост.
 
 declare
   @first_date date = '2023-01-01',
@@ -50,6 +53,5 @@ where vl.employee_id = @emp_id
 ) potential_dates (visit_date);
 
 declare @log_date date = (select pd.visit_date from #potential_dates pd where pd.date_num = floor((select COUNT(*) from #potential_dates) * rand() + 1));
-select @emp_id, @log_date;
 
 insert into fct.visit_log values (@emp_id, @log_date);
