@@ -37,6 +37,18 @@
           <AssociatedConnUserName />
           <FullPath>generate_by_filter.sql</FullPath>
         </FileNode>
+        <FileNode Name="index_comparison.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>index_comparison.sql</FullPath>
+        </FileNode>
+        <FileNode Name="visit_log_pivot.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>visit_log_pivot.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Разное" Type="3" Sorted="true">

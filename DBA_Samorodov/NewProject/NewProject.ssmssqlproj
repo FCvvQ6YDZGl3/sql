@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="BenGanChapter7">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="NewProject">
   <Items>
     <LogicalFolder Name="Соединения" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="MAIN-WORK:MAIN-WORK\Professional">
-          <Created>2023-09-28T18:41:13.589041+07:00</Created>
+          <Created>2023-09-26T12:10:13.1433205+07:00</Created>
           <Type>SQL</Type>
           <Server>MAIN-WORK</Server>
           <UserName />
           <Authentication>Проверка подлинности Windows</Authentication>
-          <InitialDB>solving_test</InitialDB>
+          <InitialDB />
           <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
@@ -19,11 +19,17 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="pivot.sql">
+        <FileNode Name="Создание.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>pivot.sql</FullPath>
+          <FullPath>Создание.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Удаление.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Удаление.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
