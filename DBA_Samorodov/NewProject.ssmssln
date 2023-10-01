@@ -7,14 +7,17 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "NewProject", "NewProject\Ne
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Хренние", "Хренние\Хренние.ssmssqlproj", "{0EDCD05C-C7D8-4F47-BEEC-8934B34439C8}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "backup", "backup\backup.ssmssqlproj", "{1C579E6D-F884-4889-B82C-111E701F90B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B8504AB7-8FC6-49BA-A057-F7E738E0CA5A}.Default|Default.ActiveCfg = Default
-		{1E80E269-ED21-4093-A786-5D2324C17A8E}.Default|Default.ActiveCfg = Default
 		{0EDCD05C-C7D8-4F47-BEEC-8934B34439C8}.Default|Default.ActiveCfg = Default
+		{8F20CC33-1FD5-4031-8A92-25C17EB179E0}.Default|Default.ActiveCfg = Default
+		{1C579E6D-F884-4889-B82C-111E701F90B5}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
