@@ -14,7 +14,8 @@ begin
 	('numeric(18,2)')
 	,('varchar(MAX)')
 	,('int')
+	,('bit')
 end;
 
 alter table fct.spec drop constraint fk_spc_sql_type_id
-alter table fct.spec add constraint fk_spc_sql_type_id foreign key 
+alter table fct.spec add constraint fk_spc_sql_type_id foreign key (spc_sql_type_id) references fct.spec_sql_type(sst_id);

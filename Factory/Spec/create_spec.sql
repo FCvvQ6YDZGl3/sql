@@ -1,4 +1,4 @@
-drop table fct.spec
+--drop table fct.spec
 IF (OBJECT_ID(N'fct.spec') IS NULL)
 CREATE TABLE fct.spec
 (
