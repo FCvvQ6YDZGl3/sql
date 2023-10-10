@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="create_product.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>create_product.sql</FullPath>
+        </FileNode>
         <FileNode Name="create_spc_product_values.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
@@ -36,6 +42,18 @@
           <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>creater_spec_sql_type.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spec_pivot.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>spec_pivot.sql</FullPath>
+        </FileNode>
+        <FileNode Name="testdata.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MAIN-WORK:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MAIN-WORK</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>testdata.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
