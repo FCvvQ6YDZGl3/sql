@@ -1,3 +1,4 @@
+use solving_test;
 if(object_id(N'fct.product', N'U') is null)
 create table fct.product
 (
@@ -8,10 +9,14 @@ create table fct.product
 	constraint uq_prd_prd_id unique (prd_id),
 	constraint uq_prd_prd_name unique (prd_name),
 )
-begin transaction
-rollback;
---commit;
---truncate table fct.product
+
+if(object_id(N'fct.product_history_name', N'U') is null)
+create table fct.product_history_name
+(
+	prd_id int identity not null,
+	prd_name_lost_date datetime not null default(GETDATE()),
+	prd_name char(100) not null, --как хотите так и выдумывайте но в 100 байтов уложитесь
+)
 
 drop table if exists #fct_product;
 select *
@@ -24,7 +29,8 @@ from
 	('Патриот', 'кптр'),
 	('Водородная бомба', 'квдбм'),
 	('Владимир Ильич', 'кВЛ'),
-	('Север-1', 'ксвр1')
+	('Север-1', 'ксвр1'),
+	('ПОБЕДА', 'кпбд')
 )
 as f(prd_name, prd_code)
 
@@ -68,5 +74,3 @@ when not matched
 when matched
 	then update set
 		trg.prd_name = src.prd_name;
-
-select p.* from fct.product p
